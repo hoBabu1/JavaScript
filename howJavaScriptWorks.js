@@ -58,4 +58,10 @@ let sq2 = square(5);
  * 
  * In line 27 
  * again function is invoked --- repeat the process 
+ * 
+ * when all things are done 
+ * global execution is deleted 
+ * 
+ * Everything is managed by call stack 
+ * Call stack maintains the order of execution of execution context 
  */
