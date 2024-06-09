@@ -65,3 +65,29 @@ let sq2 = square(5);
  * Everything is managed by call stack 
  * Call stack maintains the order of execution of execution context 
  */
+
+/************************************************************************************** */
+
+/**
+ * Hosting 
+ * 
+ * hosting in java script is the phenomena in by which u can access before initializing it 
+ * 
+ * not defined and undefined both are different  
+ */
+
+var x = 1 ;
+a();
+b();
+console.log(x);
+function a()
+{
+    var x = 4;
+    console.log(x);
+}
+function b()
+{
+    var x = 67;
+    console.log(x);
+}
+// output 4 , 67 , 1
