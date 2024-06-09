@@ -42,4 +42,4 @@ const initialValue = 0;
 const val = ar2.reduce((accumulator , currVlaue)=>(accumulator+currVlaue),initialValue)
 console.log(val);
 
-// usually used in shopping cart 
+// usually used in shopping cart  
