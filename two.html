@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class = "language ">
+        <li >
+            java Script
+        </li>
+    </ul>
+</body>
+<script>
+    // create a new element 
+    function addLanguage(language)
+    {
+    const newElementOfList = document.createElement("li")
+    const addNewlang = document.createTextNode(language)
+    newElementOfList.appendChild(addNewlang)
+    const classes = document.querySelector(".language")
+    console.log(classes);
+    classes.appendChild(newElementOfList)
+    }
+    addLanguage("Solidity")
+
+    // edit 
+    const secondLang = document.querySelector("li:nth-child(2)")
+    const lii = document.createElement("li")
+    lii.appendChild(document.createTextNode("Vyper"))
+    secondLang.replaceWith(lii)
+
+    // remove 
+    const removeFirstLang = document.querySelector("li")
+    console.log(removeFirstLang);
+    removeFirstLang.remove();
+
+</script>
+</html>
