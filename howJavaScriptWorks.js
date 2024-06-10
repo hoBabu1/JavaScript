@@ -91,3 +91,21 @@ function b()
     console.log(x);
 }
 // output 4 , 67 , 1
+
+/**
+ * Shortest JS program -- Empty File 
+ * As soon as u run a program a global execution is created.
+ * Every browser has different JS engine -- like chrome have V8 
+ * When a global execution is created -- window objec tis created by V8 , it might be different for different browser 
+ * 
+ * Basically window is a global object which is created along global execution context .
+ * At global level (this === window)
+ * 
+ * what is global space ? 
+ * anything which is not inside any function, is inside global scope 
+ * 
+ * var a = 10
+ * console.log(a)
+ * console.log(this.a)
+ * console.log(window.a)
+ */
