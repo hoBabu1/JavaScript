@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="getInfo">GetMyInfo</button>
+    
+</body>
+<script>
+    const xhr = new XMLHttpRequest();
+
+    // it takes two input method and string 
+    xhr.open("GET","https://api.github.com/users/hobabu1")
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState == 4)
+        {
+            const data = JSON.parse(this.responseText);
+            console.log(data.login);
+        }
+    }
+    xhr.send();
+</script>
+</html>
